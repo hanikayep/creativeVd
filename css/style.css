@@ -171,8 +171,19 @@ body{
     gap: 4rem;
 }
 
+@media (max-width: 998px){
+    .banner__wrapper{
+        flex-direction: column;
+    }
+    .banner__img img{
+        width: 100%;
+    }
+
+}
+
+
 .banner__content h1{
-    font-size: 5rem;
+    font-size: clamp(3rem,5vw,5rem);
     color: var(--primary);
     line-height: 1;
     margin-bottom: 1rem;
@@ -214,6 +225,17 @@ section.services{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 4rem;
+}
+
+@media (max-width: 998px){
+    .services__wrapper{
+        display: block;
+        padding: 0 5rem;
+    }
+    .services__wrapper .services__content{
+        margin-bottom: 5rem;
+    }
+
 }
 
 .services__content{
@@ -259,7 +281,7 @@ section.aboutMe{
 }
 
 .aboutMe__img img{
-    width: 100%;
+    /* width: 100%; */
 }
 
 .aboutMe__wrapper{
@@ -276,6 +298,15 @@ section.aboutMe{
 .aboutMe__contents p{
     text-align: justify;
 }
+
+@media (max-width: 998px){
+    .aboutMe__wrapper{
+        display: block;
+    }
+
+
+}
+
 
 section.trends{
     background-color: var(--black);
@@ -294,6 +325,23 @@ section.trends{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem; 
+}
+
+
+@media (max-width: 998px){
+    .trendsWrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 3rem;
+    }
+    .trendsWrapper .trends__cards{
+        width: 80%;
+        margin: auto;
+    }
+    .trendsWrapper .trends__cards img{
+        width: 100%;
+    }
+
 }
 
 .trends__cards{
@@ -358,17 +406,13 @@ footer.footer{
     justify-content: space-between;
 }
 
-.footerWrapper nav{
-    display: flex;
-    gap: 1rem;
-}
 
-.footerWrapper nav ul{
+.footerWrapper .footer__icons ul{
     display: flex;
     gap: 10px;
 }
 
-.footerWrapper nav ul li {
+.footerWrapper .footer__icons ul li {
     list-style-type: none;
 }
 
@@ -386,6 +430,22 @@ footer.footer{
 
 .footerWrapper p.copyright{
     text-align: left;
+}
+
+
+@media (max-width: 998px){
+    .footerWrapper {  
+    display: block;
+    text-align: center !important;
+    }
+    .footerWrapper p.copyright{  
+    text-align: center !important;
+    }
+    .footerWrapper .footer__icons ul{
+    display: flex;
+    justify-content: center;
+    }
+
 }
 
 
