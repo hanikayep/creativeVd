@@ -708,6 +708,10 @@ section.updatesPage{
     grid-template-columns: 2fr 1fr;
 }
 
+.updatesPage__sidebar table tr td:nth-child(2){
+    text-align: right;
+}
+
 .updatesPage__content{
     padding-right: 2rem;
 }
@@ -822,5 +826,8 @@ hr{
     }
     .updatesPage__content ul li{
         padding: 1rem 1rem 1rem 0;
+    }
+    .updatesPage__content{
+        padding-right: 0;
     }
 }
