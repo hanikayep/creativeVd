@@ -8,6 +8,7 @@ body{
     font-family: 'Popins', sans-serif;
     overflow-x: hidden;
 }
+
 :root {
     --primary: #ffa700;
     --black: #2b2b2b;
@@ -15,6 +16,9 @@ body{
     --white: #ffffff;
 }
 
+p{
+    line-height: 1.5;
+}
 .container{
     max-width: 112rem;
     margin: 0 auto;
@@ -48,6 +52,7 @@ body{
     position: sticky;
     top: 0;
     filter: drop-shadow(0 0 1px #000000);
+    z-index: 999;
 }
 
 .header__wrapper{
@@ -592,6 +597,12 @@ footer.footer{
     .arrow a{
         margin-top: 2rem;
     }   
+    #servicesimg{
+        order: 1;
+    }
+    #servicescontents{
+        order: 2;
+    }
 }
 
 /* Contact Page */
@@ -599,23 +610,24 @@ footer.footer{
     padding: 6rem 0;
     background-color: var(--black);
     border-bottom: 1px solid var(--gray);
+    height: 100vh;
 }
 
 .contactPage__wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
     color: var(--white);
 }
 
 .contact__details p{
-    margin: 2rem 0;
+    margin-bottom: 2rem;
     width: 85%;
 }
 
-.contact__details h1{
+.contactPage h1{
     color: var(--primary);
     font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
 .contact__details .sns-icons table tr {
@@ -682,15 +694,21 @@ footer.footer{
     color: var(--black);
 }
 
+
 @media (max-width: 998px){
+    .contactPage{
+        height: auto;
+    }
     .contactPage__wrapper{
         display: block;
     }
+
     .contact__form{
         margin-top: 3rem;
+        width: 100%;
     }
-}
 
+}
 
 /* Updates Page */
 section.updatesPage{
@@ -824,8 +842,8 @@ hr{
     .updatesPage__sidebar{
         margin: 3rem 0 0 0;
     }
-    .updatesPage__content ul li{
-        padding: 1rem 1rem 1rem 0;
+    .updatesPage__content ul{
+        display: block;
     }
     .updatesPage__content{
         padding-right: 0;
