@@ -24,7 +24,7 @@
                     <h2>Creative <span>Visual</span>  Designs</h2>
                 </div>
 
-                <nav>
+                <nav class="nav">
                     <ul>
                         <li> <a class="active" href="index.html"> Home </a> </li>
                         <li> <a href="about.html"> About </a> </li>
@@ -178,7 +178,17 @@
 
 
 
+    <script>
 
+        const nav = document.querySelector(".nav");
+        const toggleMenu = document.querySelector(".toggle__menu");
+
+
+        toggleMenu.addEventListener("click", ()=>{
+            toggleMenu.classList.toggle("open");
+            nav.classList.toggle("open");
+        })
+    </script>
 
 
 

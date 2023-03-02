@@ -6,6 +6,7 @@
 
 body{
     font-family: 'Popins', sans-serif;
+    overflow-x: hidden;
 }
 :root {
     --primary: #ffa700;
@@ -42,7 +43,9 @@ body{
 .header{
     background-color: var(--black);
     padding: 1rem 0;
-    /* filter: drop-shadow(0 0 2px #000000); */
+    position: fixed;
+    width: 100%;
+    /* filter: drop-shadow(0 0 1px #000000); */
 }
 
 .header__wrapper{
@@ -72,6 +75,7 @@ body{
 .header__wrapper nav ul li a{
     color: var(--gray);
     text-decoration: none;
+    border-bottom: 1px solid rgba(211, 211, 211, 0.705);
 }
 
 .header__wrapper nav ul li a:hover{
@@ -93,6 +97,7 @@ body{
     height: 0.2rem;
     width: 2rem;
     margin-bottom: 0.4rem;
+    border-radius: .5rem;
 }
 
 
@@ -101,22 +106,26 @@ body{
         display: block;
     }
 
-    .header__wrapper nav{
+    .header__wrapper nav.open ul{
+        right: 0;
+        transition: 0.5s ease-in;
     }
 
     .header__wrapper nav ul{
         display: block;
         position: absolute;
-        left: 0;
+        right: -100%;
         top: 6.5rem;
-        width: 100%;
-        height: 100%;
+        width: 50%;
+        height: 100vh;
+        transition: 0.5s ease-in;
         background-color: white;
         text-align: center;
     }
     .header__wrapper nav ul li a{
         display: block;
         padding: 1rem;
+        text-align: left;
     }
     .header__wrapper nav ul li:hover{
         background-color: var(--primary);
@@ -124,6 +133,9 @@ body{
     .header__wrapper nav ul li a:hover{
         color: var(--white);
     }
+
+
+
 }
 
 
@@ -388,19 +400,19 @@ footer.footer{
     text-align: center;
 }
 
-.aboutMeBanner__contents nav ul{
+.aboutMeBanner__contents ul{
     margin-top: 2rem;
     list-style-type: none;
     display: flex;
     gap: 1rem;
 }
 
-.aboutMeBanner__contents nav ul li i{
+.aboutMeBanner__contents ul li i{
     color: var(--primary);
     font-size: 1.5rem;
 }
 
-.aboutMeBanner__contents nav ul li i:hover{
+.aboutMeBanner__contents ul li i:hover{
     color: var(--black);
 }
 
