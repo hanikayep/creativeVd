@@ -6,3 +6,4 @@ toggleMenu.addEventListener("click", ()=>{
     toggleMenu.classList.toggle("open");
     nav.classList.toggle("open");
 })
+

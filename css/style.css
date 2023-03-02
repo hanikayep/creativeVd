@@ -303,6 +303,11 @@ section.aboutMe{
     .aboutMe__wrapper{
         display: block;
     }
+    .banner__img img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 
 }
@@ -327,27 +332,10 @@ section.trends{
     gap: 2rem; 
 }
 
-
-@media (max-width: 998px){
-    .trendsWrapper{
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-top: 3rem;
-    }
-    .trendsWrapper .trends__cards{
-        width: 80%;
-        margin: auto;
-    }
-    .trendsWrapper .trends__cards img{
-        width: 100%;
-    }
-
-}
-
 .trends__cards{
     margin-top: 4rem;    
     background-color: var(--white);
-    border-radius: 1.5rem;
+    border-radius: 3rem;
 }
 
 .trends__cards h4, .trends__cards p, .trends__cards a{
@@ -368,8 +356,26 @@ section.trends{
     display: inline-block;
     text-decoration: none;
     color: var(--primary);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
+
+
+@media (max-width: 998px){
+    .trendsWrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 3rem;
+    }
+    .trendsWrapper .trends__cards{
+        width: 90%;
+        margin: auto;
+    }
+    .trendsWrapper .trends__cards img{
+        width: 100%;
+    }
+
+}
+
 
 section.contact{
     background-color: var(--primary);
@@ -435,15 +441,18 @@ footer.footer{
 
 @media (max-width: 998px){
     .footerWrapper {  
-    display: block;
-    text-align: center !important;
+        display: block;
+        text-align: center;
+        margin-bottom: .5rem;
     }
     .footerWrapper p.copyright{  
-    text-align: center !important;
+        text-align: center !important;
+        margin: .5rem 0;
     }
     .footerWrapper .footer__icons ul{
-    display: flex;
-    justify-content: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: .5rem;
     }
 
 }
@@ -495,7 +504,19 @@ footer.footer{
     text-align: center;
 }
 
-
+@media (max-width: 998px){
+    .aboutMeBanner__wrapper {  
+        display: block;
+    }
+    .aboutMeBanner__contents p{
+        width: 100%;
+    }
+    .aboutMeBanner__wrapper img{
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+}
 /* CHEVRON */
 .arrow, .arrow-dark{
     margin-top: 2rem;
@@ -556,14 +577,28 @@ footer.footer{
     color: var(--white);
 }
 
-
+@media (max-width: 998px){
+    .services__list{
+        display: block;
+    }
+    .services__contents p.lorem-40{
+        width: 100%;
+    }
+    .services__list img{
+        width: 90%;
+        display: block;
+        margin: 2rem auto;
+    }
+    .arrow a{
+        margin-top: 2rem;
+    }   
+}
 
 /* Contact Page */
 .contactPage{
     padding: 6rem 0;
     background-color: var(--black);
     border-bottom: 1px solid var(--gray);
-    height: 80vh;
 }
 
 .contactPage__wrapper{
@@ -647,6 +682,14 @@ footer.footer{
     color: var(--black);
 }
 
+@media (max-width: 998px){
+    .contactPage__wrapper{
+        display: block;
+    }
+    .contact__form{
+        margin-top: 3rem;
+    }
+}
 
 
 /* Updates Page */
@@ -768,4 +811,16 @@ hr{
     color: var(--white);
     border: 3px solid var(--black);
     background-color: #2b2b2b;
+}
+
+@media (max-width: 998px){
+    .updatesPage__wrapper{
+        display: block;
+    }
+    .updatesPage__sidebar{
+        margin: 3rem 0 0 0;
+    }
+    .updatesPage__content ul li{
+        padding: 1rem 1rem 1rem 0;
+    }
 }
