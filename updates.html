@@ -58,87 +58,125 @@
                     <img src="./img/trends1.png" alt="">
 
                     <ul>
-                        <li> <i class="fa-solid fa-user"></i> Hannah Oliveros </li>
-                        <li> <i class="fa-solid fa-calendar-days"></i> March 1, 2023</li>
+                        <li> <i class="fa-solid fa-user"></i> Roy Balaaldia </li>
+                        <li> <i class="fa-solid fa-calendar-days"></i> March 21, 2022</li>
                         <li> <i class="fa-solid fa-tags"></i> Web Design | Wireframe </li>
                     </ul>
 
                     <h3> Designing Concepts</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloremque ex, praesentium a dolorem neque? Aliquam dolore repellat perferendis iusto asperiores quae corrupti incidunt aperiam! Eius corrupti quidem debitis nisi ipsa consequuntur, corporis autem quibusdam!</p>
 
-                    <p class="readMore"> Read more...</p>
+                    <a href="">Read more...</a>
 
                     <hr>
 
                     <img src="./img/trends2.png" alt="">
 
                     <ul>
-                        <li> <i class="fa-solid fa-user"></i> Hannah Oliveros </li>
-                        <li> <i class="fa-solid fa-calendar-days"></i> March 1, 2023</li>
+                        <li> <i class="fa-solid fa-user"></i> Roy Balaaldia </li>
+                        <li> <i class="fa-solid fa-calendar-days"></i> March 21, 2022</li>
                         <li> <i class="fa-solid fa-tags"></i> Web Development </li>
                     </ul>
 
                     <h3> Designing Concepts</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita doloremque ex, praesentium a dolorem neque? Aliquam dolore repellat perferendis iusto asperiores quae corrupti incidunt aperiam! Eius corrupti quidem debitis nisi ipsa consequuntur, corporis autem quibusdam!</p>
 
-                    <p class="readMore"> Read more...</p>
+                    
+                    <a href="">Read more...</a>
                 </div>
 
+                <!-- We can use another class for border bottom and add it on the first div of trends instead of using hr for division -->
+
+
                 <div class="updatesPage__sidebar">
-                    <h3>Categories</h3>
+                    <div class="sidebar__categories">
+                        <h3>Categories</h3>
+                        <table>
+                            <tr>
+                                <td>Web Design</td>
+                                <td>(2)</td>
+                            </tr>
+                            <tr>
+                                <td>Web Development</td>
+                                <td>(3)</td>
+                            </tr>
+                            <tr>
+                                <td>Wire Frame</td>
+                                <td>(1)</td>
+                            </tr>
+                            <tr>
+                                <td>Vector & Logo</td>
+                                <td>(5)</td>
+                            </tr>
+                            <tr>
+                                <td>Social Media</td>
+                                <td>(2)</td>
+                            </tr>
+                        </table>
 
-                    <table>
-                        <tr>
-                            <td>Web Design</td>
-                            <td>(2)</td>
-                        </tr>
-                        <tr>
-                            <td>Web Development</td>
-                            <td>(3)</td>
-                        </tr>
-                        <tr>
-                            <td>Wire Frame</td>
-                            <td>(1)</td>
-                        </tr>
-                        <tr>
-                            <td>Vector & Logo</td>
-                            <td>(5)</td>
-                        </tr>
-                        <tr>
-                            <td>Social Media</td>
-                            <td>(2)</td>
-                        </tr>
-                    </table>
+                    <!-- We can use list then space between instead of using table
+                        <ul>
+                            <li>
+                                <p>Web Design</p>
+                                <p>(2)</p>
+                            </li>
+                            <li>
+                                <p>Web Development</p>
+                                <p>(3)</p>
+                            </li>                        <li>
+                                <p>Wireframe</p>
+                                <p>(1)</p>
+                            </li>
+                            <li>
+                                <p>Vector & Logo</p>
+                                <p>(5)</p>
+                            </li>
+                            <li>
+                                <p>Social Media</p>
+                                <p>(2)</p>
+                            </li>
+                        </ul> -->
+                    </div>
 
+                                    
                     <hr>
 
-                    
+                    <div class="sidebar__recentPosts">
                     <h3>Recent Post</h3>
-                    <div class="post__wrapper">
-                        <div class="post__img">
-                            <img src="./img/post1.png" alt="">
+                        <div class="post__wrapper">
+                            <div class="post__img">
+                                <img src="./img/post1.png" alt="">
+                            </div>
+                            <div class="post__details">
+                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                <p>March 21, 202</p>
+
+                                <!-- We can put it in a div 
+                                <div class="postTitle">
+                                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                                </div>
+                                <div class="postDate">
+                                    <p>March 21, 202</p>
+                                </div> -->
+                            </div>
                         </div>
-                        <div class="post__details">
-                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                            <p>March 1, 2023</p>
+                        <div class="post__wrapper">
+                            <div class="post__img">
+                                <img src="./img/post2.png" alt="">
+                            </div>
+                            <div class="post__details">
+                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                <p>March 1, 2023</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="post__wrapper">
-                        <div class="post__img">
-                            <img src="./img/post2.png" alt="">
-                        </div>
-                        <div class="post__details">
-                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                            <p>March 1, 2023</p>
-                        </div>
-                    </div>
-                    <div class="post__wrapper">
-                        <div class="post__img">
-                            <img src="./img/post3.png" alt="">
-                        </div>
-                        <div class="post__details">
-                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
-                            <p>March 1, 2023</p>
+                        <div class="post__wrapper">
+                            <div class="post__img">
+                                <img src="./img/post3.png" alt="">
+                            </div>
+                            <div class="post__details">
+                                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h5>
+                                <p>March 1, 2023</p>
+                            </div>
                         </div>
                     </div>
 
